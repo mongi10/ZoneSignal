@@ -1,0 +1,70 @@
+zoneflow-forecast-engine/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── config.py
+│   │   ├── database.py
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   ├── market_history.py
+│   │   │   ├── forecasts.py
+│   │   │   ├── forecast_results.py
+│   │   │   └── adaptive_learning.py
+│   │   ├── schemas/
+│   │   │   ├── __init__.py
+│   │   │   ├── forecast.py
+│   │   │   └── market.py
+│   │   ├── engines/
+│   │   │   ├── __init__.py
+│   │   │   ├── market_history_engine.py
+│   │   │   ├── macro_integration_engine.py
+│   │   │   ├── seasonality_engine.py
+│   │   │   ├── quant_engine/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── hmm_regime.py
+│   │   │   │   ├── bayesian_models.py
+│   │   │   │   ├── monte_carlo.py
+│   │   │   │   ├── fractal_analysis.py
+│   │   │   │   ├── volatility_models.py
+│   │   │   │   ├── regime_switching.py
+│   │   │   │   ├── ensemble_model.py
+│   │   │   │   └── factor_model.py
+│   │   │   ├── probabilistic_forecast_engine.py
+│   │   │   ├── self_evaluation_engine.py
+│   │   │   ├── adaptive_learning_engine.py
+│   │   │   ├── backtesting_engine.py
+│   │   │   └── ai_interpretation_engine.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── data_service.py
+│   │   │   ├── forecast_service.py
+│   │   │   └── cache_service.py
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── routes/
+│   │   │   │   ├── forecasts.py
+│   │   │   │   ├── market_data.py
+│   │   │   │   ├── backtesting.py
+│   │   │   │   └── learning.py
+│   │   │   └── dependencies.py
+│   │   └── scheduler/
+│   │       ├── __init__.py
+│   │       └── jobs.py
+│   ├── requirements.txt
+│   └── alembic/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── panels/
+│   │   │   ├── charts/
+│   │   │   ├── widgets/
+│   │   │   └── common/
+│   │   ├── stores/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── types/
+│   │   └── utils/
+│   ├── package.json
+│   └── tailwind.config.js
+└── docker-compose.yml
